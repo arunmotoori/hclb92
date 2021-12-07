@@ -36,6 +36,8 @@ public class LoginTest extends Base {
 		loginPage.enterPassword(prop.getProperty("validPassword"));
 		loginPage.clickLoginButton();
 		
+		System.out.println("Arun changed this");
+		
 		AccountPage accountPage = new AccountPage(driver);
 		
 		Assert.assertEquals(accountPage.verifyThePresenceOfEditYourAccountInformationLink(),true);
