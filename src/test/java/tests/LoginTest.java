@@ -38,7 +38,7 @@ public class LoginTest extends Base {
 		
 		AccountPage accountPage = new AccountPage(driver);
 		
-		Assert.assertEquals(accountPage.verifyThePresenceOfEditYourAccountInformationLink(),false);
+		Assert.assertEquals(accountPage.verifyThePresenceOfEditYourAccountInformationLink(),true);
 		
 	}
 	
